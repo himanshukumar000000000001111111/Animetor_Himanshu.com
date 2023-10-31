@@ -1,0 +1,65 @@
+<head>
+    <title>About</title>
+    <link rel="stylesheet" href="Parallax.css">
+</head>
+<body>
+    <header id="header">
+        <a href="#" class="logo">It's_Himanshu_Patel_OP</a>
+        
+        <ul>
+            <li><a href="INDEX.HTML" class="active">Youtube</a></li>
+                        <li><a href="INDEX.HTML" class="active1">Instagram</a></li>
+              <li><a href="INDEX.HTML" class="active2">Facebook</a></li>
+            <li><a href="INDEX.HTML" class="active3">Twitter</a></li>
+        </ul>
+    </header>
+    
+    <Section>
+        <h2 id="text"><span>Hiii</span><br>Welcome</h2>
+        
+        <img src="0.png" id="bird1">
+        <img src="1.png" id="bird2">
+        <img src="2.png" id="forest">
+        
+        <a id="btn">Subscribe</a>
+        
+        <img src="3.png" id="rocks">
+        <img src="4.png" id="water">
+    </Section>
+    
+    <div class="sec">
+        <h2>MY INFORMETION</h2>
+        <p>My name is himanshu kumar.
+             My father's name is hajari singh.  
+            My mother's name is Subhdra devi. 
+<br><br>
+I belong to a Sirsiyan village in Rohtas district of Bihar. I have liked computer subject since childhood. And now I am 15 years old and I like doing computer courses and this is my first website after doing the main web design course.
+To know more about me, click on about section and readMORE...
+</p>
+    </div>
+    <script>
+        let text = document.getElementById('text');
+        let bird1 = document.getElementById('bird1');
+        let bird2 = document.getElementById('bird2');
+        let btn = document.getElementById('btn');
+        let rocks = document.getElementById('rocks');
+        let forest = document.getElementById('forest');
+        let water = document.getElementById('water');
+        let header = document.getElementById('header');
+        
+        window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            
+            text.style.top = 50 + value * -.1 + '%';
+            bird2.style.top = value * -1.5 + 'px';
+            bird2.style.left = value * 2 + 'px';
+            bird1.style.top = value * -1.5 + 'px';
+            bird1.style.left = value * -5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            rocks.style.top = value * -.12 + 'px';
+            forest.style.top = value * .25 + 'px';
+            header.style.top = value * .5 + 'px';
+        })
+    </script>
+    
+</body>
